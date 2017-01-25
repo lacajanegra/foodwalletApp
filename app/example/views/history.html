@@ -1,0 +1,26 @@
+<div class="padding" ng-controller="HistoryController">
+  <super-navbar>
+    <super-navbar-title>Historial</super-navbar-title>
+  </super-navbar>
+   <div ng-show="!benefits.length">
+    <div class="card" style="text-align: center; margin-top: 0">
+      <div class="item item-text-wrap">
+        <i class="icon-left super-sad-outline" style="color:#E91E1E; font-size: 2em;"></i>
+        <p style="margin-top: 1em;"> Aún no utilizas tus cupones disponibles. ¿Qué esperas?</p>
+      </div>
+    </div>
+
+    </div>
+  <div ng-repeat="benefit in benefits">
+    <div class="list">
+      <a class="item item-thumbnail-left" href="#">
+      
+        <img src="http://52.53.208.59/{{benefit.brand.logo}}">
+        {{benefit.brandsGet.web}}
+        <h2 style="padding-top: 1em;">{{benefit.generated.title}}</h2>
+        <p><i class="icon-left super-checkmark-circled" style="color:#20BB26"></i> Utilizado el <strong>{{benefit.utilized_date}}</strong></p>
+      </a>
+    </div>
+
+  </div>
+</div>

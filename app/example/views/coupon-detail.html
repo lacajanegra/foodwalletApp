@@ -1,0 +1,41 @@
+<div class="padding" ng-controller="CouponController">
+  <super-navbar>
+    <super-navbar-title ng-bind="gl"></super-navbar-title>
+  </super-navbar>
+
+	<div class="list card list-detail">
+<h2 ></h2>
+	  <div class="item item-avatar">
+	    <img src="http://52.53.208.59/{{brandImg}}">
+	    <h2>{{brandName}}</h2>
+	    <p>{{coupon.title}}</p>
+	  </div>
+
+	  <div class="item item-image">
+	    <img src="http://52.53.208.59/{{coupon.coupon_img}}">
+	  </div>
+	  <div class="card">
+		  <div class="item item-divider">
+		    Reseña:
+		  </div>
+		  <div class="item item-text-wrap">
+		    <p ng-bind-html="coupon.review">{{coupon.review}}</p>
+		    <p>{{coupon.review}}</p>
+		  </div>
+		  <div class="item item-divider">
+		    Condiciones:
+		  </div>
+		  <div class="item item-text-wrap">
+		    <p>{{coupon.conditions}}</p>
+		  </div>
+		</div>
+
+
+	  <div class="button-bar">
+      	<super-modal-show location="example#utilized?id={{keyBenefit}}&brandName={{brandName}}" class="button icon-left button-large super-happy button-assertive">Utilizar </super-modal-show>
+      </div>
+
+
+	</div>
+  
+</div>

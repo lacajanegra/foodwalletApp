@@ -1,0 +1,30 @@
+
+
+<div class="padding" ng-app="example" ng-controller="IndexController">
+
+  <super-navbar>
+    <super-navbar-title>
+      Beneficios disponibles!
+    </super-navbar-title>
+  </super-navbar>
+  <div class="list">
+
+  <div ng-repeat="brand in brands">
+
+        <super-navigate view-id="brand-detail">
+ 
+    <a class="item item-thumbnail-left" ng-click="loadBenefit(brand)">
+      <img src="http://52.53.208.59/{{brand.logo}}">
+      <div class="vertical-centered-text">
+        <h2>{{brand.name}}</h2>
+      </div>
+      <!-- <p>Nine Inch Nails</p> -->
+    </a>
+     </super-navigate>
+  </div>
+
+
+</div>
+<!-- <h1>{{text}}</h1>
+ -->
+</div>

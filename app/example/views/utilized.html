@@ -1,0 +1,50 @@
+
+
+<div class="padding" ng-app="example" ng-controller="UtilizedController">
+
+  <super-navbar>
+    <super-navbar-title>
+      Cupón listo!
+    </super-navbar-title>
+    <super-navbar-button side="right" ng-click="listo()">
+      Listo
+    </super-navbar-button>
+  </super-navbar>
+
+<div class="list card">
+
+  <a class="item item-thumbnail-left" ng-click="loadBenefit(brand)">
+      <img src="http://52.53.208.59/uploads/nuevoLogoFW.png">
+        <h2 style="margin-top: 1em">Food Wallet</h2>
+        <p>Disfruta Tú Beneficio!</p>
+      <!-- <p>Nine Inch Nails</p> -->
+  </a>
+
+  <div class="item item-body">
+    <img class="full-image" src="http://52.53.208.59/{{coupon.coupon_img}}">
+        <!-- <div class="card">
+          <div class="item item-divider">
+            <i class="super-person"></i>
+            Datos Beneficiario
+          </div>
+          <div class="item item-text-wrap">
+            Nombre: {{user.name}}
+          </div>
+        </div> -->
+        <div class="card">
+          <div class="item item-divider">
+            <i class="super-pricetags"></i> Código de Cupón
+          </div>
+          <div class="item item-text-wrap">
+            
+            <b>{{hashCode}}</b>
+            
+          </div>
+          <div class="item item-divider" style="font-size: 0.7em">
+                Debes presentar este código de cupón en caja
+          </div>
+        </div>
+  </div>
+
+</div>
+</div>

@@ -1,0 +1,34 @@
+<div class="padding" ng-controller="BrandDetailController">
+  <super-navbar>
+    <super-navbar-title>
+      {{brandName}}
+    </super-navbar-title>
+  </super-navbar>
+
+      <div ng-repeat="benefit in benefits">
+
+          <div class="list card list-detail">
+            <a >
+              <div ng-click="loadCoupon(benefit.$id,brandName,brandImg)" class="item item-avatar">
+                <img src="http://52.53.208.59/{{brandImg}}">
+                <h2>{{brandName}}</h2>
+                <p>{{benefit.title}}</p>
+              </div>
+
+              <div class="item item-body">
+                <img ng-click="loadCoupon(benefit.$id,brandName,brandImg)" class="full-image" src="http://52.53.208.59/{{benefit.coupon_img}}">
+                <p>
+                <div class="button-bar">
+                    <super-modal-show location="example#utilized?id={{benefit.$id}}&brandName={{brandName}}" class="button icon-left button-large super-happy button-assertive">Utilizar </super-modal-show>
+                    <a class="button icon-right button-large super-chevron-right button-energized" ng-click="loadCoupon(benefit.$id,brandName,brandImg)">Detalle</a>
+                </div>
+                  <!-- {{benefit.review}} -->
+                </p>
+
+              </div>
+            </a>
+          </div>
+      </div>
+
+  
+</div>

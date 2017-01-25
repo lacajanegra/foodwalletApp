@@ -1,0 +1,43 @@
+
+
+<div class="padding" ng-app="example" ng-controller="LoginController">
+
+  <super-navbar>
+    <super-navbar-title>
+      Autenticar
+    </super-navbar-title>
+  </super-navbar>
+
+  <div class="row">
+  <div class="col"></div>
+  <div class="col" style="text-align: center; padding-left: 0 !important"> <!-- <img src="http://52.53.208.59/uploads/nuevoLogoFW.png" width="100px"> --><img src="https://nostupidwikianswers.files.wordpress.com/2011/10/logo_coupons.png" width="100px"></div>
+  <div class="col"></div>
+
+</div>
+
+
+
+<div class="list card">
+
+  <label class="item item-input">
+    <i class="icon super-android-contact placeholder-icon"></i>
+    <span class="input-label" style="max-width: 100px">E-Mail</span>
+    <input type="text" required autofocus ng-model="user.username">
+  </label>
+  <label class="item item-input">
+    <i class="icon super-android-lock placeholder-icon"></i>
+    <span class="input-label" style="max-width: 100px">Contraseña</span>
+    <input type="password" ng-model="user.pass">
+  </label>
+</div>
+
+<div class="row responsive-sm">
+  <button class="button button-large button-energized" ng-click="login()">
+    Ingresar
+  </button>
+</div>
+
+  
+<!-- <h1>{{text}}</h1>
+ -->
+</div>

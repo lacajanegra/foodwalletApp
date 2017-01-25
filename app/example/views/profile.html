@@ -1,0 +1,62 @@
+<div class="padding" ng-controller="ProfileController">
+  <super-navbar>
+    <super-navbar-title>Perfil</super-navbar-title>
+    <super-navbar-button side="right" ng-click="editar()">
+      Editar
+    </super-navbar-button>
+  </super-navbar>
+
+	<div class="list" id="list-profile">
+	  <a class="item item-icon-left" href="#">
+	    <i class="icon super-android-contact"></i>
+	    Nombre
+	    <span class="item-note">
+	      {{userData.name}}
+	    </span>
+	  </a>
+	  <a class="item item-icon-left" href="#">
+	    <i class="icon super-information-circled"></i>
+	    Rut
+	    <span class="item-note">
+	      {{userData.rut}}
+	    </span>
+	  </a>
+	  <a class="item item-icon-left" href="#">
+	    <i class="icon super-android-drafts"></i>
+	    E-Mail
+	    <span class="item-note">
+	      {{userData.mail}}
+	    </span>
+	  </a>
+	<!--<a class="item item-icon-left" href="#">
+	    <i class="icon super-briefcase"></i>
+	    Cargo
+	    <span class="item-note">
+	      {{userData.cargo}}
+	    </span>
+	  </a> -->
+	<!--<a class="item item-icon-left" href="#">
+	    <i class="icon super-ios-list"></i>
+	    Categoría
+	    <span class="item-note">
+	      {{userData.category}}
+	    </span>
+	  </a> -->
+	  <a class="item item-icon-left" href="#">
+	    <i class="icon super-pricetags"></i>
+	    Cupones utilizados
+	    <span class="badge badge-assertive">{{userData.benefits_used}}</span>
+	  </a>
+	  <a class="item item-icon-left" href="#">
+	    <i class="icon super-pricetags"></i>
+	    Cupones disponibles
+	    <span class="badge badge-balanced">undefined</span>
+	  </a>
+
+	</div>
+
+	<button class="button button-full button-assertive" ng-click="logout()">
+	  Cerrar Sesión
+	</button>
+
+</div>

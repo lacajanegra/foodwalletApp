@@ -1,0 +1,18 @@
+supersonic.ui.layers.popAll({
+          onSuccess:function(data){
+            supersonic.logger.log("popAll was successful. push is a go");
+            supersonic.logger.log(data);
+               var modalView = new supersonic.ui.View("example#utilized");
+            var options = {
+             animate: true
+           }
+            
+           supersonic.ui.modal.show(modalView, options);
+           
+          },
+          onFailure:function(error){
+            supersonic.logger.log("popAll was unsuccessful. push is a no-no");
+            supersonic.logger.log(error);
+          }
+        });
+pescapes
