@@ -1,2 +1,5 @@
 # foodwalletApp
-Hybrid mobile app / Appgyver Framework
+
+Hybrid mobile App with AppGyver Framework.
+
+The purpose is to manage discount coupons for food.
